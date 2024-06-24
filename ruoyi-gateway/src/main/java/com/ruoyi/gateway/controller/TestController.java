@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/test")
 @org.springframework.web.bind.annotation.RestController
-public class RestController {
+public class TestController {
     @Value("${common.value}")
     private String commonValue;
 

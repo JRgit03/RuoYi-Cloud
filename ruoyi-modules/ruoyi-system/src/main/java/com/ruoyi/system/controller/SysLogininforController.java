@@ -85,8 +85,7 @@ public class SysLogininforController extends BaseController
 
     @InnerAuth
     @PostMapping
-    public AjaxResult add(@RequestBody SysLogininfor logininfor)
-    {
+    public AjaxResult add(@RequestBody SysLogininfor logininfor) {
         return toAjax(logininforService.insertLogininfor(logininfor));
     }
 }

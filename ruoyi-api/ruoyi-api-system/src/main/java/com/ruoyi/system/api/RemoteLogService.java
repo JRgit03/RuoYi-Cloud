@@ -11,9 +11,13 @@ import com.ruoyi.system.api.domain.SysLogininfor;
 import com.ruoyi.system.api.domain.SysOperLog;
 import com.ruoyi.system.api.factory.RemoteLogFallbackFactory;
 
+
 /**
- * 日志服务
- * 
+ * <p>日志服务接口</p>
+ *
+ * <p>FeignClient注解属性说明</>
+ * <p>contextId Feign客户端上下文id, value 远程服务调用名称此处使用字符串常量, fallbackFactory 服务降级工厂类</p>
+ *
  * @author ruoyi
  */
 @FeignClient(contextId = "remoteLogService", value = ServiceNameConstants.SYSTEM_SERVICE, fallbackFactory = RemoteLogFallbackFactory.class)
